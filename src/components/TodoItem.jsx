@@ -3,7 +3,7 @@ import React from 'react'
 const TodoItem = ({item}) => {
   return (
     <>
-        <li>{item}</li>
+        <li key={item}>{item}</li>
     </>
   )
 }
