@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import TodoItem from "./TodoItem";
 
 const Todo = () => {
   const [todo, setTodo] = useState("");
@@ -26,8 +27,8 @@ const Todo = () => {
       </form>
 
       <ul>
-        {todos.map((todo) => (
-          <li>{todo}</li>
+        {todos.map((item) => (
+          <TodoItem item={item} />
         ))}
       </ul>
     </div>
