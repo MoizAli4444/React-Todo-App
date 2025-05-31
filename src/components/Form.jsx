@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from './form.module.css'
 
 const Form = ({todos,setTodos}) => {
   const [todo, setTodo] = useState("");
@@ -15,7 +16,7 @@ const Form = ({todos,setTodos}) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.todoform} onSubmit={handleSubmit}>
         <input
           onChange={(e) => setTodo(e.target.value)}
           value={todo}
