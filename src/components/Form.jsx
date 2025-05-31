@@ -18,6 +18,8 @@ const Form = ({todos,setTodos}) => {
     <>
       <form className={styles.todoform} onSubmit={handleSubmit}>
         <input
+        className={styles.modernInput}
+        placeholder="enter item name"
           onChange={(e) => setTodo(e.target.value)}
           value={todo}
           type="text"
