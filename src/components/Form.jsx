@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-const Form = () => {
+const Form = ({todos,setTodos}) => {
   const [todo, setTodo] = useState("");
-  const [todos, setTodos] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();

@@ -4,14 +4,15 @@ import TodoList from "./TodoList";
 import Form from "./Form";
 
 const Todo = () => {
+  const [todos, setTodos] = useState([]);
  
   return (
     <div>
       
-      <Form/>
+      <Form todos={todos} setTodos={setTodos} />
 
       <ul>
-        <TodoList/>
+        <TodoList todos={todos} />
       </ul>
     </div>
   );
