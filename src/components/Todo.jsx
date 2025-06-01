@@ -11,7 +11,7 @@ const Todo = () => {
       <Form todos={todos} setTodos={setTodos} />
 
       <ul>
-        <TodoList todos={todos} />
+        <TodoList todos={todos} setTodos={setTodos} />
       </ul>
     </div>
   );
